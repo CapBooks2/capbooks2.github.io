@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Start of the test -->
+<div class="container">
+    <h1>Math Test</h1>
+    <form action="#" method="post">
+        <!-- User's Name -->
+        <div class="question">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <!-- Multiple Choice Questions -->
+        <div class="question">
+            <h2>Question 1: What is 5 + 3?</h2>
+            <label><input type="radio" name="q1" value="6" required> 6</label>
+            <label><input type="radio" name="q1" value="7"> 7</label>
+            <label><input type="radio" name="q1" value="8"> 8</label>
+            <label><input type="radio" name="q1" value="9"> 9</label>
+        </div>
+
+        <div class="question">
+            <h2>Question 2: What is the square root of 16?</h2>
+            <label><input type="radio" name="q2" value="2" required> 2</label>
+            <label><input type="radio" name="q2" value="4"> 4</label>
+            <label><input type="radio" name="q2" value="8"> 8</label>
+            <label><input type="radio" name="q2" value="16"> 16</label>
+        </div>
+
+        <div class="question">
+            <h2>Question 3: What is the value of π (pi) to two decimal places?</h2>
+            <label><input type="radio" name="q3" value="3.14" required> 3.14</label>
+            <label><input type="radio" name="q3" value="3.15"> 3.15</label>
+            <label><input type="radio" name="q3" value="3.16"> 3.16</label>
+            <label><input type="radio" name="q3" value="3.17"> 3.17</label>
+        </div>
+
+        <!-- Word Problem -->
+        <div class="question">
+            <h2>Question 4: Solve the following word problem:</h2>
+            <p>If a car travels at a speed of 60 miles per hour for 2.5 hours, how far does it travel?</p>
+            <label for="word_problem">Your answer:</label>
+            <textarea id="word_problem" name="word_problem" rows="4" cols="50" required></textarea>
+        </div>
+
+        <!-- Math Symbols -->
+        <div class="question">
+            <p>Use the following math symbols in your answers:</p>
+            <ul>
+                <li>&plusmn; for +- (plus-minus)</li>
+                <li>&times; for * (multiplication)</li>
+                <li>&divide; for / (division)</li>
+            </ul>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="question">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+</div>
+<!-- End of the test -->
+
+</body>
+</html>
