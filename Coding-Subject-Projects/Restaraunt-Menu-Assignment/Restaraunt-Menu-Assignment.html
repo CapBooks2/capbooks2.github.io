@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Designs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        .menu {
+            width: 400px;
+            height: 550px;
+            margin: 0 10px;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: auto;
+        }
+        .menu h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+        }
+        
+        #breakfast {
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            order: -1;
+        }
+        #lunch {
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            order: 0;
+        }
+        #dinner {
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div id="breakfast" class="menu">
+    <h2>Breakfast Menu</h2>
+    <img src="images/breakfast.jpg" alt="Breakfast" width="300">
+    <ul>
+        <li>Pancakes</li>
+        <li>Scrambled Eggs</li>
+        <li>Bacon</li>
+        <li>Orange Juice</li>
+        <li>Coffee</li>
+    </ul>
+</div>
+
+<div id="lunch" class="menu">
+    <h2>Lunch Menu</h2>
+    <img src="images/lunch.jpg" alt="Lunch" width="300">
+    <ul>
+        <li>Caesar Salad</li>
+        <li>Grilled Chicken Sandwich</li>
+        <li>French Fries</li>
+        <li>Iced Tea</li>
+        <li>Apple Pie</li>
+    </ul>
+</div>
+
+<div id="dinner" class="menu">
+    <h2>Dinner Menu</h2>
+    <img src="images/dinner.jpg" alt="Dinner" width="300">
+    <ul>
+        <li>Steak</li>
+        <li>Mashed Potatoes</li>
+        <li>Grilled Asparagus</li>
+        <li>Lobster Roll</li>
+        <li>Chocolate Cake</li>
+    </ul>
+</div>
+
+</body>
+</html>
