@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header' 'main' 'footer';
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .main {
+            grid-area: main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .puzzle-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            width: auto;
+            margin: auto;
+        }
+
+        .puzzle-piece {
+            width: calc(400px / 3);
+            height: calc(400px / 3);
+            border: 1px solid #ccc;
+        }
+
+        .puzzle-piece img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .faulty-piece {
+            display: none;
+        }
+
+        .footer {
+            grid-area: footer;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="header">
+        <h1>Puzzle: Snowman</h1>
+    </div>
+
+    <div class="main">
+        <div class="puzzle-container">
+            <div class="puzzle-piece"><img src="images/puzzle2_K.jpg" alt="Piece K"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_M.jpg" alt="Piece M"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_E.jpg" alt="Piece E"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_G.jpg" alt="Piece G"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_A.jpg" alt="Piece A"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_D.jpg" alt="Piece D"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_L.jpg" alt="Piece L"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_B.jpg" alt="Piece B"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_F.jpg" alt="Piece F"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_J.jpg" alt="Piece J"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_H.jpg" alt="Piece H"></div>
+            <div class="puzzle-piece"><img src="images/puzzle2_I.jpg" alt="Piece I"></div>
+            <div class="puzzle-piece faulty-piece"><img src="images/puzzle2_C.jpg" alt="Faulty Piece"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Date Completed: June 19th, 2024</p>
+    </div>
+</div>
+
+</body>
+</html>
