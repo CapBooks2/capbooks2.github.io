@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busy Day Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        table {
+            width: 80%;
+            max-width: 800px;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .highlight-row {
+            background-color: #e0f7fa;
+        }
+        .highlight-column {
+            background-color: #ffe082;
+        }
+        .header-row {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr class="header-row">
+            <th>Time</th>
+            <th>Event</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="highlight-column">4:00 AM - 8:00 AM</td>
+            <td>Flight to Miami</td>
+        </tr>
+        <tr>
+            <td>8:00 AM - 9:00 AM</td>
+            <td>Breakfast at the airport</td>
+        </tr>
+        <tr>
+            <td>9:00 AM - 10:00 AM</td>
+            <td>Relax at the airport</td>
+        </tr>
+        <tr>
+            <td class="highlight-column">10:00 AM - 12:00 PM</td>
+            <td>Flight to second destination (Caribbean)</td>
+        </tr>
+        <tr>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Lunch at local restaurant</td>
+        </tr>
+        <tr>
+            <td>1:00 PM - 3:00 PM</td>
+            <td>Beach time</td>
+        </tr>
+        <tr>
+            <td>3:00 PM - 5:00 PM</td>
+            <td>Explore the town</td>
+        </tr>
+        <tr>
+            <td>5:00 PM - 6:00 PM</td>
+            <td>Visit friend's house</td>
+        </tr>
+        <tr>
+            <td>6:00 PM - 8:00 PM</td>
+            <td>Dinner with friends</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
