@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-wrapper {
+    margin: 0 10px; 
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+
+.blue-dinosaur {
+    filter: hue-rotate(90deg);
+}
